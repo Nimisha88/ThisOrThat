@@ -1,0 +1,10 @@
+/* Color Palette */
+/* #6900FF, #9951FF, #FFD700, #FAF7FF */
+/* #7A08FA, #A82FFC, #C264FE, #F8ECFD */
+
+:root {
+    --primaryDarkColor: #6900FF;
+    --secondaryColor: #9951FF;
+    --acsentColor: #FFD700;
+    --primaryLightColor: #FAF7FF;
+}

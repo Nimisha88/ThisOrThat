@@ -1,0 +1,61 @@
+@import url("./colors.css");
+@import url("./styles.css");
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+img {
+    border-radius: 0 30px 30px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-wrapper {
+    background-color: var(--primaryLightColor);
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    border: 1px solid var(--acsentColor);
+}
+
+input:focus {
+    box-shadow: 1px 1px 15px var(--acsentColor);
+}
+
+.submit-btn {
+    width: 110%;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    background-color: var(--acsentColor);
+}
+
+.submit-btn:hover {
+    border: 1px solid var(--primaryLightColor);
+    box-shadow: 1px 1px 15px var(--acsentColor);
+}
