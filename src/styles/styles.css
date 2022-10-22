@@ -1,11 +1,24 @@
+@import url('./colors.css');
+
 body {
     font-family: 'Proza Libre', sans-serif;
 }
 
 h1 {
     font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    color: var(--primaryDarkColor);
 }
 
 h2, h3, h4, h5, h6 {
     font-family: 'Cormorant', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.avatar {
+    background-color: var(--secondaryColor);
 }

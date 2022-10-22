@@ -1,0 +1,30 @@
+@import url('./styles.css');
+
+.poll {
+    width: 15vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primaryLightColor);
+    border-radius: 20px 0 20px 0;
+    padding: 2rem;
+    margin: 1.25rem;
+    /* border: 1px solid var(--fadedAcsentColor); */
+    box-shadow: 1px 1px 15px lightgray;
+    color: var(--primaryDarkColor);
+}
+
+.date, .votes {
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.author {
+    margin: 0;
+}
+
+.avatar {
+    color: var(--acsentColor) !important;
+    background-color: var(--primaryDarkColor) !important;
+}

@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
 import Poll from "./Poll";
+import "../styles/dashboard.css";
 
 const Dashboard = ({
     answeredPolls,
@@ -9,20 +9,21 @@ const Dashboard = ({
     dispatch,
 }) => {
     return (
-        <div>
-            <h3>Dashboard</h3>
-            <h4>New Polls</h4>
-            {unansweredPolls &&
-                unansweredPolls.map((pollId) => {
-                    return (
-                        <Poll key={pollId} id={pollId} />
-                    );
-                })}
-            <h4>Answered Polls</h4>
-            {answeredPolls &&
-                answeredPolls.map((pollId) => {
-                    return <Poll key={pollId} id={pollId} />;
-                })}
+        <div className="dashboard">
+            <h2 className="poll-category">Care to share your opinion?</h2>
+            <div className="poll-list">
+                {unansweredPolls &&
+                    unansweredPolls.map((pollId) => {
+                        return <Poll key={pollId} id={pollId} />;
+                    })}
+            </div>
+            <h2 className="poll-category">Do others think alike?</h2>
+            <div className="poll-list">
+                {answeredPolls &&
+                    answeredPolls.map((pollId) => {
+                        return <Poll key={pollId} id={pollId} />;
+                    })}
+            </div>
         </div>
     );
 };
