@@ -1,9 +1,16 @@
 import { connect } from "react-redux";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { handleCreatePoll } from "../actions/actions";
 import "../styles/newPoll.css"
 
 const NewPoll = ({ authedUser, dispatch }) => {
+    useEffect(() => {
+        document.getElementById("nav-link-new-poll").classList.add('selected');
+        return () => {
+            document.getElementById("nav-link-new-poll").classList.remove('selected');
+        };
+    }, []);
+
     const optOne = useRef();
     const optTwo = useRef();
 

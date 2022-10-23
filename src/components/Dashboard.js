@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+import { useEffect } from "react";
 import Poll from "./Poll";
 import "../styles/dashboard.css";
 
@@ -8,6 +9,13 @@ const Dashboard = ({
     authedUser,
     dispatch,
 }) => {
+    useEffect(() => {
+        document.getElementById("nav-link-home").classList.add('selected');
+        return () => {
+            document.getElementById("nav-link-home").classList.remove('selected');
+        };
+    }, []);
+
     return (
         <div className="dashboard">
             <h2 className="poll-category">Care to share your opinion?</h2>

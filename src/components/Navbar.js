@@ -14,13 +14,13 @@ const Navbar = ({ user }) => {
     return (
         <nav className="nav">
             <ul className="left-menu">
-                <li className={["nav-item", "selected"].join(' ')}>
+                <li id="nav-link-home" className="nav-item">
                     <Link to="/">Home</Link>
                 </li>
-                <li className="nav-item">
+                <li id="nav-link-leaderboard" className="nav-item">
                     <Link to="/leaderboard">Leaderboard</Link>
                 </li>
-                <li className="nav-item">
+                <li id="nav-link-new-poll" className="nav-item">
                     <Link to="/new">New Poll</Link>
                 </li>
             </ul>
@@ -29,7 +29,7 @@ const Navbar = ({ user }) => {
                     <Avatar className="avatar" name={user.name} size="50" round="50%" />
                     <h5 className="user-id">{user.id}</h5>
                 </li>
-                <li className="nav-item">
+                <li id="nav-link-logout" className="nav-item">
                     Logout
                 </li>
             </ul>
