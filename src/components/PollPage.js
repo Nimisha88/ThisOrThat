@@ -1,13 +1,11 @@
 import { connect } from "react-redux";
 import { useState, useEffect } from "react";
-import { handleVote } from "../actions/polls";
+import { handleVote } from "../actions/actions";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { getNumberOfVotes } from "../utils/helper";
 import Avatar from "react-avatar";
 import "../styles/pollPage.css";
 
-const acsentColor = "#FFD700";
-const primaryDarkColor = "#6900FF";
 const optionOne = "optionOne";
 const optionTwo = "optionTwo";
 

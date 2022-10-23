@@ -9,8 +9,6 @@ const polls = (state = {}, action) => {
             }
         case REGISTER_VOTE:
             const { authedUser, qid, answer } = action.vote;
-            console.log("Inside Poll Reducer: ", (answer==="optionTwo"? state[qid].optionTwo.votes.concat(authedUser)
-            : state[qid].optionTwo.votes))
             return {
                 ...state,
                 [qid]: {
