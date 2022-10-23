@@ -1,6 +1,6 @@
-import { getInitialData, savePollAnswer } from "../utils/api"
-import { receivePolls, registerVoteInPolls } from "./polls"
-import { receiveUsers, registerVoteInUsers } from "./users";
+import { getInitialData, savePollAnswer, savePoll } from "../utils/api"
+import { receivePolls, registerVoteInPolls, addPollInPolls } from "./polls"
+import { receiveUsers, registerVoteInUsers, addPollInUsers } from "./users";
 import { setAuthedUser } from "./authedUser";
 import { showLoading, hideLoading } from "react-redux-loading-bar";
 
@@ -41,6 +41,24 @@ export const handleVote = (qid, answer) => {
                 alert("Oops! There was an error to save your vote, please try again later!");
                 console.log(error);
             }); 
+        }
+    )
+}
+
+export const handleCreatePoll = (poll) => {
+    return (
+        (dispatch) => {
+            dispatch(showLoading());
+            return savePoll(poll)
+            .then((formattedPoll) => {
+                alert("Awesome! Your poll was saved!");
+                dispatch(addPollInPolls(formattedPoll));
+                dispatch(addPollInUsers(formattedPoll));
+                dispatch(hideLoading());
+            }).catch((error) => {
+                alert("Oops! There was an error to save your poll, please try again later!");
+                console.log(error);
+            });
         }
     )
 }

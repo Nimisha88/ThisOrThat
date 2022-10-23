@@ -1,4 +1,4 @@
-import { RECEIVE_POLLS, REGISTER_VOTE } from "../actions/polls"
+import { RECEIVE_POLLS, REGISTER_VOTE, ADD_POLL } from "../actions/polls"
 
 const polls = (state = {}, action) => {
     switch(action.type) {
@@ -24,6 +24,11 @@ const polls = (state = {}, action) => {
                         : state[qid].optionTwo.votes
                     }
                 }
+            }
+        case ADD_POLL:
+            return {
+                ...state,
+                [action.poll.id]: action.poll
             }
         default:
             return state;
