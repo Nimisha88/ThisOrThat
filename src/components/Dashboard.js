@@ -16,6 +16,8 @@ const Dashboard = ({
                     unansweredPolls.map((pollId) => {
                         return <Poll key={pollId} id={pollId} />;
                     })}
+                {unansweredPolls && unansweredPolls.length===0 &&
+                    <p>No new polls!</p>}
             </div>
             <h2 className="poll-category">Do others think alike?</h2>
             <div className="poll-list">
@@ -23,6 +25,8 @@ const Dashboard = ({
                     answeredPolls.map((pollId) => {
                         return <Poll key={pollId} id={pollId} />;
                     })}
+                {answeredPolls && answeredPolls.length===0 &&
+                    <p>No voted polls!</p>}
             </div>
         </div>
     );

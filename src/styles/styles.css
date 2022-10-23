@@ -22,3 +22,10 @@ a {
 .avatar {
     background-color: var(--secondaryColor);
 }
+
+.subtitle {
+    margin: 4rem;
+    padding: 1rem;
+    border-bottom: 3px solid var(--fadedAcsentColor);
+    box-shadow: 2px 2px 15px var(--primaryLightColor);
+}

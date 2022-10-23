@@ -18,8 +18,8 @@ export function savePoll(poll) {
     return _saveQuestion(poll);
 }
 
-export function savePollAnswer(poll) {
-    return _saveQuestionAnswer(poll);
+export function savePollAnswer(vote) {
+    return _saveQuestionAnswer(vote);
 }
 
 export function verifyCredentials({ uname, pwd }) {

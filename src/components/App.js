@@ -33,6 +33,7 @@ const App = ({ loading, loggedIn, dispatch }) => {
                             <Route path="/leaderboard" element={<Leaderboard />} />
                             <Route path="/new" element={<NewPoll />} />
                         </Routes>
+                        <h4 className="footer">© Designed and developed by <span>Nimisha Viraj</span></h4>
                     </div>)
                 }
             </Fragment>

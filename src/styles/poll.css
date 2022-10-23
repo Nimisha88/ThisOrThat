@@ -1,6 +1,6 @@
 @import url('./styles.css');
 
-.poll {
+.poll-card {
     width: 15vw;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -11,7 +11,7 @@
     padding: 2rem;
     margin: 1.25rem;
     /* border: 1px solid var(--fadedAcsentColor); */
-    box-shadow: 1px 1px 15px lightgray;
+    box-shadow: 5px 5px 10px lightgray;
     color: var(--primaryDarkColor);
 }
 
