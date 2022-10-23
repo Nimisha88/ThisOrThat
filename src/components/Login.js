@@ -7,11 +7,11 @@ import { setAuthedUser } from "../actions/authedUser";
 
 const loginImgSrc = "https://cdn.pixabay.com/photo/2021/07/04/18/46/question-6387294_1280.jpg"
 
-const DummyLogin = ({ dispatch }) => {
-    let navigate = useNavigate();
-    dispatch(setAuthedUser("sarahedo"));
-    navigate(`/`);
-}
+// const DummyLogin = ({ dispatch }) => {
+//     let navigate = useNavigate();
+//     dispatch(setAuthedUser("sarahedo"));
+//     navigate(`/`);
+// }
 
 const Login = ({ dispatch }) => {
     let navigate = useNavigate();
@@ -44,10 +44,10 @@ const Login = ({ dispatch }) => {
 
     return (
         <main className="login">
-            <div class="img-wrapper">
+            <div className="img-wrapper">
                 <img src={loginImgSrc} alt="This or that App Login" />
             </div>
-            <div class="form-wrapper">
+            <div className="form-wrapper">
                 <h1 className="app-name">This or that?</h1>
                 <form onSubmit={handleLogin}>
                     <input type="text" placeholder="Username" ref={unameRef} />
@@ -63,5 +63,5 @@ const Login = ({ dispatch }) => {
 //     return {};
 // };
 
-// export default connect(mapStatesToProps)(Login);
-export default connect()(DummyLogin);
+export default connect()(Login);
+// export default connect()(DummyLogin);

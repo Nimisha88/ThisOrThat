@@ -1,4 +1,4 @@
-import { RECEIVE_USERS, REGISTER_VOTE, ADD_POLL } from "../actions/users"
+import { RECEIVE_USERS, REGISTER_VOTE_IN_USERS, ADD_POLL_IN_USERS } from "../actions/users"
 
 const users = (state = {}, action) => {
     switch(action.type) {
@@ -7,7 +7,7 @@ const users = (state = {}, action) => {
                 ...state,
                 ...action.users
             }
-        case REGISTER_VOTE:
+        case REGISTER_VOTE_IN_USERS:
             const { authedUser, qid, answer } = action.vote;
             return {
                 ...state,
@@ -19,13 +19,13 @@ const users = (state = {}, action) => {
                     }
                 }
             }
-        case ADD_POLL: 
+        case ADD_POLL_IN_USERS: 
             const poll = action.poll
             return {
                 ...state,
                 [poll.author]: {
                     ...state[poll.author],
-                    questions: state[poll.author].questions.includes(poll.id)? state[poll.author].questions : state[poll.author].questions.concat(poll.id)
+                    questions: state[poll.author].questions.concat(poll.id)
                 }
             }
         default:

@@ -16,7 +16,6 @@
 
 .login .form-wrapper {
     background-color: var(--primaryLightColor);
-    width: 110%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +23,7 @@
 }
 
 .login form {
-    width: 50%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,16 +45,23 @@
 }
 
 .login .submit-btn {
-    /* width: 110%; */
+    width: 70%;
     border: 0;
     outline: 0;
     padding: 0.75rem;
-    margin: 0.5rem;
+    margin: 1rem;
     border-radius: 10px;
-    background-color: var(--acsentColor);
+    color: var(--acsentColor);
+    background-color: var(--primaryDarkColor);
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 .login .submit-btn:hover {
-    border: 1px solid var(--primaryLightColor);
-    box-shadow: 1px 1px 15px var(--acsentColor);
+    border: 1px solid var(--acsentColor);
+    box-shadow: 1px 1px 15px var(--acsentColor), 2px 2px 2px var(--primaryLightColor);
+}
+
+.login h1 {
+    font-size: 3rem;
+    padding: 1rem;
 }

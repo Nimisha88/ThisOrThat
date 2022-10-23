@@ -1,4 +1,4 @@
-import { RECEIVE_POLLS, REGISTER_VOTE, ADD_POLL } from "../actions/polls"
+import { RECEIVE_POLLS, REGISTER_VOTE_IN_POLLS, ADD_POLL_IN_POLLS } from "../actions/polls"
 
 const polls = (state = {}, action) => {
     switch(action.type) {
@@ -7,7 +7,7 @@ const polls = (state = {}, action) => {
                 ...state,
                 ...action.polls
             }
-        case REGISTER_VOTE:
+        case REGISTER_VOTE_IN_POLLS:
             const { authedUser, qid, answer } = action.vote;
             return {
                 ...state,
@@ -25,7 +25,7 @@ const polls = (state = {}, action) => {
                     }
                 }
             }
-        case ADD_POLL:
+        case ADD_POLL_IN_POLLS:
             return {
                 ...state,
                 [action.poll.id]: action.poll
