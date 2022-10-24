@@ -46,7 +46,7 @@ const Navbar = ({ user, dispatch }) => {
     );
 }
 
-const mapStatesToProps = ({ polls, users, authedUser }) => {
+const mapStatesToProps = ({ users, authedUser }) => {
     return {
         user: authedUser===null? null: users[authedUser]
     }

@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { useEffect, Fragment } from "react";
 import { initializeAppData } from "../actions/actions";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LoadingBar from "react-redux-loading-bar";
 import Dashboard from "./Dashboard";
 import PollPage from "./PollPage";
@@ -12,8 +12,6 @@ import Login from "./Login";
 import "../styles/app.css"
 
 const App = ({ loading, loggedIn, dispatch }) => {
-    const navigate = useNavigate();
-
     useEffect(() => {
         dispatch(initializeAppData());
     }, []);

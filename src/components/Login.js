@@ -59,9 +59,5 @@ const Login = ({ dispatch }) => {
     );
 };
 
-// const mapStatesToProps = ({ polls, users, authedUser }) => {
-//     return {};
-// };
-
 export default connect()(Login);
 // export default connect()(DummyLogin);

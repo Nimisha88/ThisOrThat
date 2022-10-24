@@ -5,9 +5,7 @@ import "../styles/dashboard.css";
 
 const Dashboard = ({
     answeredPolls,
-    unansweredPolls,
-    authedUser,
-    dispatch,
+    unansweredPolls
 }) => {
     useEffect(() => {
         const homeLink = document.getElementById("nav-link-home")
