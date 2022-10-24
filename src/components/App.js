@@ -9,6 +9,7 @@ import NewPoll from "./NewPoll";
 import Navbar from "./Navbar";
 import Leaderboard from "./Leaderboard";
 import Login from "./Login";
+import NotFound from "./NotFound";
 import "../styles/app.css"
 
 const App = ({ loading, loggedIn, dispatch }) => {
@@ -30,9 +31,10 @@ const App = ({ loading, loggedIn, dispatch }) => {
                         <Routes>
                             <Route path="/login" exact element={<Login />} />
                             <Route path="/" exact element={<Dashboard />} />
-                            <Route path="/poll/:id" element={<PollPage />} />
+                            <Route path="/questions/:question_id" element={<PollPage />} />
                             <Route path="/leaderboard" exact element={<Leaderboard />} />
-                            <Route path="/new" exact element={<NewPoll />} />
+                            <Route path="/add" exact element={<NewPoll />} />
+                            <Route path="/notFound" exact element={<NotFound />} />
                         </Routes>
                         <h4 className="footer">© Designed and developed by <span>Nimisha Viraj</span></h4>
                     </div>)

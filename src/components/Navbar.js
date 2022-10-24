@@ -30,7 +30,7 @@ const Navbar = ({ user, dispatch }) => {
                     <Link to="/leaderboard">Leaderboard</Link>
                 </li>
                 <li id="nav-link-new-poll" className="nav-item">
-                    <Link to="/new">New Poll</Link>
+                    <Link to="/add">New Poll</Link>
                 </li>
             </ul>
             <ul className="right-menu">

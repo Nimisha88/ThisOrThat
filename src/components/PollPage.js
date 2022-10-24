@@ -22,15 +22,19 @@ const withRouter = (Component) => {
 
 const PollPage = ({ poll, author, authedUser, dispatch }) => {
     const [votedOption, setVotedOption] = useState(null);
+    const nav = useNavigate();
 
     useEffect(() => {
-        if (poll.optionOne.votes.includes(authedUser)) {
-            setVotedOption(optionOne);
-        }
-
-        if (poll.optionTwo.votes.includes(authedUser)) {
-            setVotedOption(optionTwo);
-        }
+        if (poll !== null) {
+            if (poll.optionOne.votes.includes(authedUser)) {
+                setVotedOption(optionOne);
+            }
+            if (poll.optionTwo.votes.includes(authedUser)) {
+                setVotedOption(optionTwo);
+            }
+        } else {
+            nav(`/notFound`);
+        } 
     }, []);
 
     const handleOptionClick = (event) => {
@@ -46,7 +50,8 @@ const PollPage = ({ poll, author, authedUser, dispatch }) => {
     };
 
     return (
-        <div className="poll-page">
+        poll===null? null
+        :(<div className="poll-page">
             <h2 className="subtitle">Poll by <span className="author">{author.name}</span></h2>
             <Avatar className="avatar" name={author.name} size="100" round="50%" />
             <div className="poll">
@@ -111,17 +116,17 @@ const PollPage = ({ poll, author, authedUser, dispatch }) => {
                     </div>
                 </div>}
             </div>
-        </div>
+        </div>)
     );
 };
 
 const mapStatesToProps = ({ polls, users, authedUser }, props) => {
-    const { id } = props.router.params;
-    const poll = polls[id] ? polls[id] : null;
+    const { question_id } = props.router.params;
+    const poll = polls[question_id] ? polls[question_id] : null;
 
     return {
-        poll: poll,
-        author: users[poll.author],
+        poll,
+        author: polls[question_id]? users[poll.author] : null,
         authedUser,
     };
 };

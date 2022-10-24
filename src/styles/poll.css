@@ -1,7 +1,7 @@
 @import url('./styles.css');
 
 .poll-card {
-    width: 15vw;
+    width: 18vw;
     display: grid;
     grid-template-columns: 30% 70%;
     justify-items: center;
@@ -10,7 +10,6 @@
     border-radius: 20px 0 20px 0;
     padding: 2rem;
     margin: 1.25rem;
-    /* border: 1px solid var(--fadedAcsentColor); */
     box-shadow: 5px 5px 10px lightgray;
     color: var(--primaryDarkColor);
 }

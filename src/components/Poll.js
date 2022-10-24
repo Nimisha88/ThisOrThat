@@ -6,7 +6,7 @@ import "../styles/poll.css"
 
 const Poll = ({ poll, author }) => {
     return (
-        <Link className="poll-card" to={`/poll/${poll.id}`}>
+        <Link className="poll-card" to={`/questions/${poll.id}`}>
             <div className="author-info">
                 <Avatar className="avatar" name={author.name} size="65" round="50%"/>
             </div>

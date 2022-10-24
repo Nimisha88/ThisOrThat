@@ -1,0 +1,64 @@
+.leaderboard {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lb-card h3, .lb-card h4, .lb-card h5, .lb-card h6 {
+    margin: 0.25rem;
+}
+
+.lbcard-user h3 {
+    font-family: 'Satisfy', cursive;
+    color: var(--primaryDarkColor);
+}
+
+.lbcard-score .score {
+    color: var(--primaryDarkColor);
+}
+
+.lbcards-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lb-card {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 31% 3% 31% 3% 31%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px lightgray, 5px 5px 5px lightgray;
+}
+
+.lbcards-container .do-nothing {
+    height: 75%;
+    border: 0.5px solid lightgray;
+}
+
+.lbcard-user, .lbcard-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lbcards-container .lb-card:nth-child(1) {
+    border: 1px solid var(--acsentColor);
+    box-shadow: 3px 3px 15px var(--fadedAcsentColor), 2px 2px 5px lightgray;
+}
+
+.winner {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Satisfy', cursive;
+    color: var(--primaryDarkColor);
+}

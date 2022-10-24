@@ -7,3 +7,7 @@ export function formatDate(timestamp) {
 export function getNumberOfVotes(poll) {
     return poll.optionOne.votes.length + poll.optionTwo.votes.length
 }
+
+export function getLeaderboardScore(user) {
+    return Object.keys(user.answers).length + user.questions.length
+}
