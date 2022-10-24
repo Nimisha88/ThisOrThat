@@ -3,9 +3,12 @@ import { useEffect } from "react";
 
 const Leaderboard = ({ dispatch }) => {
     useEffect(() => {
-        document.getElementById("nav-link-leaderboard").classList.add('selected');
+        const leaderboardLink = document.getElementById("nav-link-leaderboard");
+        leaderboardLink.classList.add('selected');
         return () => {
-            document.getElementById("nav-link-leaderboard").classList.remove('selected');
+            if(leaderboardLink){
+                leaderboardLink.classList.remove('selected');
+            }
         };
     }, []);
     return (

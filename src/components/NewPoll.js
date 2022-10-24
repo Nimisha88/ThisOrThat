@@ -5,9 +5,12 @@ import "../styles/newPoll.css"
 
 const NewPoll = ({ authedUser, dispatch }) => {
     useEffect(() => {
-        document.getElementById("nav-link-new-poll").classList.add('selected');
+        const newPollLink = document.getElementById("nav-link-new-poll");
+        newPollLink.classList.add('selected');
         return () => {
-            document.getElementById("nav-link-new-poll").classList.remove('selected');
+            if(newPollLink) {
+                newPollLink.classList.remove('selected');
+            }
         };
     }, []);
 

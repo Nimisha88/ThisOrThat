@@ -10,9 +10,12 @@ const Dashboard = ({
     dispatch,
 }) => {
     useEffect(() => {
-        document.getElementById("nav-link-home").classList.add('selected');
+        const homeLink = document.getElementById("nav-link-home")
+        homeLink.classList.add('selected');
         return () => {
-            document.getElementById("nav-link-home").classList.remove('selected');
+            if(homeLink){
+                homeLink.classList.remove('selected')
+            };
         };
     }, []);
 

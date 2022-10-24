@@ -38,3 +38,11 @@
 .nav-item.selected {
     border-bottom: 3px solid var(--primaryDarkColor);
 }
+
+#nav-link-logout:hover {
+    border-radius: 20px;
+    color: var(--acsentColor);
+    border: 1px solid var(--acsentColor);
+    background-color: var(--primaryDarkColor);
+    box-shadow: 1px 1px 15px var(--acsentColor);
+}

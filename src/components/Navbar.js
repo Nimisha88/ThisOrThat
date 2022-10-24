@@ -1,14 +1,23 @@
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Avatar from "react-avatar";
+import { logoutAuthedUser } from "../actions/authedUser"
 import "../styles/navbar.css"
 
-const Navbar = ({ user }) => {
+const Navbar = ({ user, dispatch }) => {
+
+    const navigate = useNavigate();
 
     if(user===null) {
         return (
             <div>No auth user</div>
         )
+    }
+
+    const handleLogout = async (event) => {
+        event.preventDefault();
+        await dispatch(logoutAuthedUser());
+        navigate(`/login`);
     }
 
     return (
@@ -29,7 +38,7 @@ const Navbar = ({ user }) => {
                     <Avatar className="avatar" name={user.name} size="50" round="50%" />
                     <h5 className="user-id">{user.id}</h5>
                 </li>
-                <li id="nav-link-logout" className="nav-item">
+                <li id="nav-link-logout" className="nav-item" onClick={handleLogout}>
                     Logout
                 </li>
             </ul>

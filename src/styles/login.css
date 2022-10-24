@@ -37,11 +37,12 @@
     border: 0;
     outline: 0;
     border-radius: 10px;
-    border: 1px solid var(--acsentColor);
+    box-shadow: 1px 1px 5px lightgray, 5px 5px 5px lightgray;
+    /* border: 1px solid var(--acsentColor); */
 }
 
 .login input:focus {
-    box-shadow: 1px 1px 15px var(--acsentColor);
+    box-shadow: 1px 1px 5px lightgray, 5px 5px 5px var(--fadedAcsentColor);
 }
 
 .login .submit-btn {
@@ -57,6 +58,7 @@
 }
 
 .login .submit-btn:hover {
+    font-weight: bold;
     border: 1px solid var(--acsentColor);
     box-shadow: 1px 1px 15px var(--acsentColor), 2px 2px 2px var(--primaryLightColor);
 }

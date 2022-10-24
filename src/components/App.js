@@ -30,11 +30,11 @@ const App = ({ loading, loggedIn, dispatch }) => {
                         <h1>This or that!</h1>
                         <Navbar />
                         <Routes>
-                            <Route path="/login" element={<Login />} />
-                            <Route path="/" element={<Dashboard />} />
+                            <Route path="/login" exact element={<Login />} />
+                            <Route path="/" exact element={<Dashboard />} />
                             <Route path="/poll/:id" element={<PollPage />} />
-                            <Route path="/leaderboard" element={<Leaderboard />} />
-                            <Route path="/new" element={<NewPoll />} />
+                            <Route path="/leaderboard" exact element={<Leaderboard />} />
+                            <Route path="/new" exact element={<NewPoll />} />
                         </Routes>
                         <h4 className="footer">© Designed and developed by <span>Nimisha Viraj</span></h4>
                     </div>)
