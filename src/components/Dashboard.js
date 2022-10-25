@@ -9,7 +9,9 @@ const Dashboard = ({
 }) => {
     useEffect(() => {
         const homeLink = document.getElementById("nav-link-home")
-        homeLink.classList.add('selected');
+        if(homeLink) {
+            homeLink.classList.add('selected');
+        }
         return () => {
             if(homeLink){
                 homeLink.classList.remove('selected')

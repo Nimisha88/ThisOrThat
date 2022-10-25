@@ -27,7 +27,6 @@ const LeaderboardCard = ({ user }) => {
 }
 
 const mapStatesToProps = ({ users }, { id }) => {
-    console.log("Key: ", id);
     return {
         user: users[id]
     }

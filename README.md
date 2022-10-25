@@ -1,6 +1,6 @@
 # React Employee Poll App: This or that!
 
-**This or that!** is a Employee poll app that allows every employee to login and create a poll with two proposed options. Employees can then vote on these options and see which option has the most votes. Application dashbord contains the list of answered/unanswered polls and leaderboard lists every employee ordered by the total number of polls they've created and answered. In case one tries to access a poll that doesn't exist, 404 error is shown with an option for user to navigate back to the application dashboard.
+**This or that!** is an Employee poll app that allows every employee to login and create a poll with two proposed options. Employees can then vote on these options and see which option has the most votes. Application dashbord contains the list of answered/unanswered polls and leaderboard lists every employee ordered by the total number of polls they've created and answered. In case one tries to access a poll that doesn't exist, 404 error is shown with an option for user to navigate back to the application dashboard.
 
 ## Application Preview
 

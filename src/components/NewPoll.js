@@ -6,7 +6,9 @@ import "../styles/newPoll.css"
 const NewPoll = ({ authedUser, dispatch }) => {
     useEffect(() => {
         const newPollLink = document.getElementById("nav-link-new-poll");
-        newPollLink.classList.add('selected');
+        if(newPollLink) {
+            newPollLink.classList.add('selected');
+        }
         return () => {
             if(newPollLink) {
                 newPollLink.classList.remove('selected');
@@ -33,8 +35,8 @@ const NewPoll = ({ authedUser, dispatch }) => {
         <div className="new-poll">
             <h2 className="subtitle">Would you rather?</h2>
             <form onSubmit={handleNewPoll}>
-                <textarea id="opt1" placeholder="Do this ... (option 1)" ref={optOne} required />
-                <textarea id="opt2" placeholder="Do that ... (option 2)" ref={optTwo} required />
+                <textarea data-testid="opt1" id="opt1" placeholder="Do this ... (option 1)" ref={optOne} required />
+                <textarea data-testid="opt2" id="opt2" placeholder="Do that ... (option 2)" ref={optTwo} required />
                 <button className="submit-btn">Create Poll</button>
             </form>
         </div>

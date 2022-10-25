@@ -1,0 +1,602 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="leaderboard"
+      >
+        <h2
+          class="subtitle"
+        >
+          Leaderboard
+        </h2>
+        <h3>
+          Winner: 
+          <span
+            class="winner"
+          >
+            Sarah Edo
+          </span>
+        </h3>
+        <div
+          class="lbcards-container"
+        >
+          <div
+            class="lb-card"
+          >
+            <div
+              class="lbcard-avatar"
+            >
+              <div
+                class="avatar sb-avatar"
+                style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+              >
+                <div
+                  class="avatar sb-avatar__text"
+                  style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                  title="Sarah Edo"
+                >
+                  <div
+                    style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                  >
+                    <span
+                      style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                    >
+                      <span />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-user"
+            >
+              <h3>
+                Sarah Edo
+              </h3>
+              <h5>
+                sarahedo
+              </h5>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-score"
+            >
+              <h4>
+                Asked: 
+                2
+              </h4>
+              <h4>
+                Answered: 
+                4
+              </h4>
+              <h4
+                class="score"
+              >
+                Total: 
+                6
+              </h4>
+            </div>
+          </div>
+          <div
+            class="lb-card"
+          >
+            <div
+              class="lbcard-avatar"
+            >
+              <div
+                class="avatar sb-avatar"
+                style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+              >
+                <div
+                  class="avatar sb-avatar__text"
+                  style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                  title="Mike Tsamis"
+                >
+                  <div
+                    style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                  >
+                    <span
+                      style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                    >
+                      <span />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-user"
+            >
+              <h3>
+                Mike Tsamis
+              </h3>
+              <h5>
+                mtsamis
+              </h5>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-score"
+            >
+              <h4>
+                Asked: 
+                2
+              </h4>
+              <h4>
+                Answered: 
+                3
+              </h4>
+              <h4
+                class="score"
+              >
+                Total: 
+                5
+              </h4>
+            </div>
+          </div>
+          <div
+            class="lb-card"
+          >
+            <div
+              class="lbcard-avatar"
+            >
+              <div
+                class="avatar sb-avatar"
+                style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+              >
+                <div
+                  class="avatar sb-avatar__text"
+                  style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                  title="Tyler McGinnis"
+                >
+                  <div
+                    style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                  >
+                    <span
+                      style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                    >
+                      <span />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-user"
+            >
+              <h3>
+                Tyler McGinnis
+              </h3>
+              <h5>
+                tylermcginnis
+              </h5>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-score"
+            >
+              <h4>
+                Asked: 
+                2
+              </h4>
+              <h4>
+                Answered: 
+                2
+              </h4>
+              <h4
+                class="score"
+              >
+                Total: 
+                4
+              </h4>
+            </div>
+          </div>
+          <div
+            class="lb-card"
+          >
+            <div
+              class="lbcard-avatar"
+            >
+              <div
+                class="avatar sb-avatar"
+                style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+              >
+                <div
+                  class="avatar sb-avatar__text"
+                  style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                  title="Zenobia Oshikanlu"
+                >
+                  <div
+                    style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                  >
+                    <span
+                      style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                    >
+                      <span />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-user"
+            >
+              <h3>
+                Zenobia Oshikanlu
+              </h3>
+              <h5>
+                zoshikanlu
+              </h5>
+            </div>
+            <div
+              class="do-nothing"
+            />
+            <div
+              class="lbcard-score"
+            >
+              <h4>
+                Asked: 
+                0
+              </h4>
+              <h4>
+                Answered: 
+                1
+              </h4>
+              <h4
+                class="score"
+              >
+                Total: 
+                1
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="leaderboard"
+    >
+      <h2
+        class="subtitle"
+      >
+        Leaderboard
+      </h2>
+      <h3>
+        Winner: 
+        <span
+          class="winner"
+        >
+          Sarah Edo
+        </span>
+      </h3>
+      <div
+        class="lbcards-container"
+      >
+        <div
+          class="lb-card"
+        >
+          <div
+            class="lbcard-avatar"
+          >
+            <div
+              class="avatar sb-avatar"
+              style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+            >
+              <div
+                class="avatar sb-avatar__text"
+                style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                title="Sarah Edo"
+              >
+                <div
+                  style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                >
+                  <span
+                    style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                  >
+                    <span />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-user"
+          >
+            <h3>
+              Sarah Edo
+            </h3>
+            <h5>
+              sarahedo
+            </h5>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-score"
+          >
+            <h4>
+              Asked: 
+              2
+            </h4>
+            <h4>
+              Answered: 
+              4
+            </h4>
+            <h4
+              class="score"
+            >
+              Total: 
+              6
+            </h4>
+          </div>
+        </div>
+        <div
+          class="lb-card"
+        >
+          <div
+            class="lbcard-avatar"
+          >
+            <div
+              class="avatar sb-avatar"
+              style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+            >
+              <div
+                class="avatar sb-avatar__text"
+                style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                title="Mike Tsamis"
+              >
+                <div
+                  style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                >
+                  <span
+                    style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                  >
+                    <span />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-user"
+          >
+            <h3>
+              Mike Tsamis
+            </h3>
+            <h5>
+              mtsamis
+            </h5>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-score"
+          >
+            <h4>
+              Asked: 
+              2
+            </h4>
+            <h4>
+              Answered: 
+              3
+            </h4>
+            <h4
+              class="score"
+            >
+              Total: 
+              5
+            </h4>
+          </div>
+        </div>
+        <div
+          class="lb-card"
+        >
+          <div
+            class="lbcard-avatar"
+          >
+            <div
+              class="avatar sb-avatar"
+              style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+            >
+              <div
+                class="avatar sb-avatar__text"
+                style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                title="Tyler McGinnis"
+              >
+                <div
+                  style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                >
+                  <span
+                    style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                  >
+                    <span />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-user"
+          >
+            <h3>
+              Tyler McGinnis
+            </h3>
+            <h5>
+              tylermcginnis
+            </h5>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-score"
+          >
+            <h4>
+              Asked: 
+              2
+            </h4>
+            <h4>
+              Answered: 
+              2
+            </h4>
+            <h4
+              class="score"
+            >
+              Total: 
+              4
+            </h4>
+          </div>
+        </div>
+        <div
+          class="lb-card"
+        >
+          <div
+            class="lbcard-avatar"
+          >
+            <div
+              class="avatar sb-avatar"
+              style="display: inline-block; vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; font-family: Helvetica, Arial, sans-serif;"
+            >
+              <div
+                class="avatar sb-avatar__text"
+                style="width: 70px; height: 70px; line-height: initial; text-align: center; color: rgb(255, 255, 255); border-radius: 50%;"
+                title="Zenobia Oshikanlu"
+              >
+                <div
+                  style="display: table; table-layout: fixed; width: 100%; height: 100%;"
+                >
+                  <span
+                    style="display: table-cell; vertical-align: middle; font-size: 100%; white-space: nowrap;"
+                  >
+                    <span />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-user"
+          >
+            <h3>
+              Zenobia Oshikanlu
+            </h3>
+            <h5>
+              zoshikanlu
+            </h5>
+          </div>
+          <div
+            class="do-nothing"
+          />
+          <div
+            class="lbcard-score"
+          >
+            <h4>
+              Asked: 
+              0
+            </h4>
+            <h4>
+              Answered: 
+              1
+            </h4>
+            <h4
+              class="score"
+            >
+              Total: 
+              1
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

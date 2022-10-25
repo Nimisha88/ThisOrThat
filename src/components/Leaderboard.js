@@ -11,7 +11,9 @@ const Leaderboard = ({ users }) => {
 
     useEffect(() => {
         const leaderboardLink = document.getElementById("nav-link-leaderboard");
-        leaderboardLink.classList.add("selected");
+        if(leaderboardLink) {
+            leaderboardLink.classList.add("selected");
+        }
         return () => {
             if (leaderboardLink) {
                 leaderboardLink.classList.remove("selected");
@@ -33,7 +35,7 @@ const Leaderboard = ({ users }) => {
     );
 };
 
-const mapStatesToProps = ({ polls, users, authedUser }) => {
+const mapStatesToProps = ({ users }) => {
     return {
         users,
     };
