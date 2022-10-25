@@ -4,8 +4,6 @@ import { getLeaderboardScore } from "../utils/helper";
 import "../styles/leaderboard.css"
 
 const LeaderboardCard = ({ user }) => {
-    console.log("LBcard of: ", user);
-
     return (
         <div className="lb-card">
             <div className="lbcard-avatar">

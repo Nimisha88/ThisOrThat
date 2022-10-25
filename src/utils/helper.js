@@ -13,7 +13,5 @@ export function getLeaderboardScore(user) {
 }
 
 export const verifyCredentials = ({ user, uname, pwd }) => {
-    console.log("Login User: ", user);
-    console.log(uname + "**********" + pwd);
     return (user.id === uname) && (user.password === pwd);
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { handleVote } from "../actions/actions";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { getNumberOfVotes } from "../utils/helper";
+import NotFound from "./NotFound"
 import Avatar from "react-avatar";
 import "../styles/pollPage.css";
 
@@ -22,7 +23,6 @@ const withRouter = (Component) => {
 
 const PollPage = ({ poll, author, authedUser, dispatch }) => {
     const [votedOption, setVotedOption] = useState(null);
-    const nav = useNavigate();
 
     useEffect(() => {
         if (poll !== null) {
@@ -32,9 +32,7 @@ const PollPage = ({ poll, author, authedUser, dispatch }) => {
             if (poll.optionTwo.votes.includes(authedUser)) {
                 setVotedOption(optionTwo);
             }
-        } else {
-            nav(`/notFound`);
-        } 
+        }
     }, []);
 
     const handleOptionClick = (event) => {
@@ -50,7 +48,7 @@ const PollPage = ({ poll, author, authedUser, dispatch }) => {
     };
 
     return (
-        poll===null? null
+        poll===null? <NotFound />
         :(<div className="poll-page">
             <h2 className="subtitle">Poll by <span className="author">{author.name}</span></h2>
             <Avatar className="avatar" name={author.name} size="100" round="50%" />

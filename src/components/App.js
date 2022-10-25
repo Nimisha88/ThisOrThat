@@ -14,7 +14,10 @@ import "../styles/app.css"
 
 const App = ({ loading, loggedIn, dispatch }) => {
     useEffect(() => {
-        dispatch(initializeAppData());
+        const loadAppData = async() => {
+            await dispatch(initializeAppData());
+        }
+        loadAppData();
     }, []);
 
     return (
