@@ -8,6 +8,16 @@
     align-items: center;
 }
 
+.poll-categories {
+    width: 75%;
+    padding: 1rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .poll-list {
     display: flex;
     flex-direction: row;
@@ -19,7 +29,19 @@
 .poll-category {
     /* border: 1px solid gray; */
     margin: 4rem;
-    padding: 1rem;
     border-bottom: 3px solid var(--fadedAcsentColor);
     box-shadow: 2px 2px 15px var(--primaryLightColor);
+}
+
+.new-cat, .done-cat {
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px lightgray, 5px 5px 5px lightgray;
+}
+
+.poll-categories > .selected {
+    color: var(--acsentColor);
+    background-color: var(--primaryDarkColor);
+    box-shadow: 1px 1px 10px var(--acsentColor), 2px 2px 5px lightgray;
 }
