@@ -4,6 +4,7 @@
 
 ## Application Preview
 
+https://user-images.githubusercontent.com/29170466/197852801-cc545fa3-9957-403b-bf4e-0fe25a2dd9e1.mov
 
 
 ## Software, Firmware and Hardware:
@@ -31,10 +32,10 @@ The page will reload automatically when you make changes.
 ### Application Login
 
 Presently, only 4 username/password combination can be used to login to the application. They are:
-  * sarahedo/pwd_sarahedo
-  * tylermcginnis/pwd_tylermcginnis
-  * mtsamis/pwd_mtsamis
-  * zoshikanlu/pwd_zoshikanlu
+  * sarahedo/password123
+  * tylermcginnis/abc321
+  * mtsamis/xyz123
+  * zoshikanlu/pass246
 
 They each mimic an employee and using any one combination should make you login to the application as that employee.
 
@@ -75,4 +76,5 @@ The application is designed and developed by Nimisha Viraj as a part of [Udacity
 ## Limitation and Scope
 
 * Presently, employee cannot signup or change/create thier own password.
+* Leaderboard sorts according to the score however, it annouces only one winner when 2 people have equal score.
 * Application can be expanded to allow multiple choice polls and send notifications when a new poll is created
