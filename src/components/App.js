@@ -29,7 +29,6 @@ const App = ({ loading, loggedIn, dispatch }) => {
                         <h1>This or that!</h1>
                         <Navbar />
                         <Routes>
-                            <Route path="/login" exact element={<Login />} />
                             <Route path="/" exact element={<Dashboard />} />
                             <Route path="/questions/:question_id" element={<PollPage />} />
                             <Route path="/leaderboard" exact element={<Leaderboard />} />

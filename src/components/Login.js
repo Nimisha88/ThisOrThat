@@ -2,7 +2,7 @@ import "../styles/login.css";
 import { useRef } from "react";
 import { connect } from "react-redux";
 import { useNavigate, useLocation, useParams } from "react-router-dom";
-import { verifyCredentials } from "../utils/api";
+import { verifyCredentials } from "../utils/helper";
 import { setAuthedUser } from "../actions/authedUser";
 
 const loginImgSrc = "https://cdn.pixabay.com/photo/2021/07/04/18/46/question-6387294_1280.jpg"
@@ -24,7 +24,7 @@ const withRouter = (Component) => {
     return ComponentWithRouterProp;
 };
 
-const Login = ({ navigateTo, dispatch }) => {
+const Login = ({ users, navigateTo, dispatch }) => {
     let navigate = useNavigate();
 
     const unameRef = useRef();
@@ -38,12 +38,13 @@ const Login = ({ navigateTo, dispatch }) => {
         let pwd = pwdRef.current.value;
         pwdRef.current.value = "";
 
-        console.log(uname + " " + pwd);
+        console.log("Login User: ", users);
 
-        const isLoginSuccessful = verifyCredentials({
+        const isLoginSuccessful = users[uname]? verifyCredentials({
+            user: users[uname],
             uname,
             pwd,
-        });
+        }): false;
 
         if (isLoginSuccessful) {
             dispatch(setAuthedUser(uname));
@@ -71,12 +72,13 @@ const Login = ({ navigateTo, dispatch }) => {
     );
 };
 
-const mapStatesToProps = (state, props) => {
+const mapStatesToProps = ({ users }, props) => {
     console.log(props.router.location);
     return {
+        users,
         navigateTo: props.router.location
     }
 }
 
-export default withRouter(connect()(Login));
+export default withRouter(connect(mapStatesToProps)(Login));
 // export default connect()(DummyLogin);

@@ -21,16 +21,3 @@ export function savePoll(poll) {
 export function savePollAnswer(vote) {
     return _saveQuestionAnswer(vote);
 }
-
-export function verifyCredentials({ uname, pwd }) {
-    switch (uname) {
-        case "sarahedo": return pwd==="pwd_sarahedo";
-        case "tylermcginnis": return pwd==="pwd_tylermcginnis";
-        case "mtsamis": return pwd==="pwd_mtsamis";
-        case "zoshikanlu": return pwd==="pwd_zoshikanlu";
-        default:
-            console.log(
-                `${uname} is not a registered employee. Please contact administration.`
-            );
-    }
-}

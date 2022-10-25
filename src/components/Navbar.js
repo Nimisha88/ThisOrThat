@@ -17,7 +17,7 @@ const Navbar = ({ user, dispatch }) => {
     const handleLogout = async (event) => {
         event.preventDefault();
         await dispatch(logoutAuthedUser());
-        navigate(`/login`);
+        navigate(`/`);
     }
 
     return (
