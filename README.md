@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# React Employee Poll App: This or that!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**This or that!** is a Employee poll app that allows every employee to login and create a poll with two proposed options. Employees can then vote on these options and see which option has the most votes. Application dashbord contains the list of answered/unanswered polls and leaderboard lists every employee ordered by the total number of polls they've created and answered. In case one tries to access a poll that doesn't exist, 404 error is shown with an option for user to navigate back to the application dashboard.
 
-## Available Scripts
+## Application Preview
 
-In the project directory, you can run:
+
+
+## Software, Firmware and Hardware:
+
+* HTML, CSS, JavaScript
+* React - react, react-redux, react-router-dom, redux-thunk, react-avatar
+* Jest and React Testing Library
+* [Create React App](https://github.com/facebook/create-react-app)
+
+## Installation
+
+Download/clone the project. `cd` to the project directory, then run:
+
+### `npm install`
+
+Installs the project dependencies.
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload automatically when you make changes.
+
+### Application Login
+
+Presently, only 4 username/password combination can be used to login to the application. They are:
+  * sarahedo/pwd_sarahedo
+  * tylermcginnis/pwd_tylermcginnis
+  * mtsamis/pwd_mtsamis
+  * zoshikanlu/pwd_zoshikanlu
+
+They each mimic an employee and using any one combination should make you login to the application as that employee.
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* main
+  * README.md - Read me file
+  * .gitignore - Files that were ignored in commit
+  * package.json - Contains list of installable dependencies needed to run the application locally
+  * src/index.js - Creating root and rendering App component
+  * src/assets - Contains image files
+  * src/actions - Contains actions to change Redux State
+  * src/components - Contains React Components
+  * src/reducers - Contains Redux Reducers
+  * src/middlewares - Contains Redux middlewares
+  * src/styles - Contains style sheets
+  * src/utils - Contains API and helper file
+  * public/index.html - HTML file
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Copyright
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application is designed and developed by Nimisha Viraj as a part of [Udacity React Nanodegree](https://www.udacity.com/)
 
-### `npm run eject`
+## Acknowledgements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* [Udacity](https://udacity.com) - Source of application requirements
+* [Pixabay](https://pixabay.com/) - For Hero Image
+* [ColorHunt](https://colorhunt.co/) - Source of Color Stack
+* [GoogleFonts](https://fonts.google.com/) - Source of Font Stack
+* [Flaticon](https://www.flaticon.com/) - Source of App Icon
+* [Stackoverflow](https://stackoverflow.com/) - Source of resolutions to coding errors and roadblocks
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Limitation and Scope
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Presently, employee cannot signup or change/create thier own password.
+* Application can be expanded to allow multiple choice polls and send notifications when a new poll is created
