@@ -3,14 +3,14 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from "../reducers/reducers"
 import middlewares from "../middlewares/middlewares"
-import { BrowserRouter as Router } from 'react-router-dom';
+import { MemoryRouter as Router } from 'react-router-dom';
 import { initializeAppData } from "../actions/actions";
 import { setAuthedUser } from "../actions/authedUser";
 import Leaderboard from "../components/Leaderboard";
 
 const store = createStore(reducers, middlewares);
 
-test("renders App", async () => {
+test("renders Leaderboard", async () => {
     await store.dispatch(initializeAppData());
     await store.dispatch(setAuthedUser("sarahedo"));
     const view = render(
